@@ -1,0 +1,163 @@
+body{
+    font-family: 'Times New Roman', Times, serif, 'Roboto', sans-serif;
+}
+
+body.bg{
+    background-image: url(img/vueLogin.jpg);
+    height: 500px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+ .signup-box{
+
+    width: 360px;
+
+    height: 500px;
+
+    margin: 0px auto;
+
+    border-radius: 7px;
+
+    background-color: rgba(0, 0, 0, 0.9); 
+
+ }
+
+ .login-box{
+
+     width: 360px;
+
+     height: 300px;
+
+     margin: auto;
+
+     border-radius: 7px;
+
+     background-color: rgba(0, 0, 0, 0.9); 
+
+ }
+ label{
+     color: #FCDD44;
+     text-decoration: double;
+ }
+
+ h1{
+
+     text-align: center;
+
+     padding-top: 15px;
+     color:#FCDD44;
+ }
+
+ h4{
+
+     text-align: center;
+
+ }
+
+ form{
+
+     width: 300px;
+
+     margin-left: 20px;
+
+ }
+
+ form label{
+
+     display: flex;
+
+     margin-top: 20px;
+
+     font-size: 18px;
+
+ }
+
+ form input{
+
+     width: 100%;
+
+     padding: 7px;
+
+     border: none;
+
+     border: 1px solid gray;
+
+     border-radius: 6px;
+
+     outline: none;
+
+ }
+
+ input[type="submit"]{
+
+     width: 320px;
+
+     height: 35px;
+
+     margin-top: 20px;
+
+     border: none;
+
+     background-color: #FCDD44;
+
+     color: #000000;
+
+     font-size: 18px;
+
+ }
+ input[type="submit"]:hover{
+    background-color: #f7cd00;
+    font-size: 20px;
+    font-weight: bold;
+ }
+ p{
+
+     text-align: center;
+
+     padding-top: 20px;
+
+     font-size: 15px;
+
+     color: #000000;
+ }
+
+ .para-2{
+
+     text-align: center;
+
+     font-size: 18px;
+   
+     margin-top: -10px; 
+
+     font-weight: bolder;
+
+ }
+.white{
+    color: white;
+}
+
+ .para-2 a{
+    font-size: 20px !important;
+    color: #FCDD44;
+    font-weight: lighter;
+ }
+
+ .para-2 a:focus{
+    font-size: 20px !important;
+    color: #352301 !important;
+    font-weight: lighter;
+ }
+
+ .para-2 a:hover{
+    font-size: 21px !important;
+    color: #c27e00;
+    font-weight: lighter;
+ }
+
+.position{
+    position:  fixed;
+    width: 370px;
+    margin-top: 10px; 
+ }
