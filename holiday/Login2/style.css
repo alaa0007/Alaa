@@ -4,7 +4,6 @@ body{
 
 body.bg{
     background-image: url(img/vueLogin.jpg);
-    height: 500px; 
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
@@ -28,7 +27,7 @@ body.bg{
 
      width: 360px;
 
-     height: 300px;
+     height: 320px;
 
      margin: auto;
 
@@ -64,33 +63,51 @@ body.bg{
 
  }
 
- form label{
+ .input {
+    height: 45px;
+    width: 90%;
+    margin: 25px 5%;
+    position: relative;
+  }
+  .input input {
+    width: 94%;
+    height: 100%;
+    border: none;
+    padding-left:12px;
+    border: 2px solid #dee2e3;
+    border-radius: 3px;
+  }
 
-     display: flex;
+  .input label {
+    position: absolute;
+    bottom: 10px;
+    padding: 2px;
+    color: #adadad;
+    text-align: center;
+    left: 10px;
+    pointer-events: none;
+  }
+  .input input:focus,.box .input input:valid {
+    border: 2px solid #ffee00;
+    transition: 0.3s;
+  }
+  .input input:focus ~ label,
+  .input input:valid ~ label {
+    transform: translateY(-30px);
+    transition: 0.3s;
+    font-size: 20px;
+    color: #ffee00;
+    background: rgba(255, 255, 255, 0);
+    font-weight: bold;
+  }
+  .input #eye{
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+    font-size:20px;
+  }
 
-     margin-top: 20px;
-
-     font-size: 18px;
-
- }
-
- form input{
-
-     width: 100%;
-
-     padding: 7px;
-
-     border: none;
-
-     border: 1px solid gray;
-
-     border-radius: 6px;
-
-     outline: none;
-
- }
-
- input[type="submit"]{
+ button{
 
      width: 320px;
 
@@ -106,8 +123,10 @@ body.bg{
 
      font-size: 18px;
 
+     border-radius: 5px;
+
  }
- input[type="submit"]:hover{
+ button:hover{
     background-color: #f7cd00;
     font-size: 20px;
     font-weight: bold;
